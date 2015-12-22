@@ -1,0 +1,1 @@
+function abvd(gggg){alert(gggg);}

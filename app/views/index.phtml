@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <title>Some amazing website</title>
+        
+        {{ assets.outputJs('header') }}
+    </head>
+    <body>
+{{ sharedVAr }}
+        <?php echo $this->getContent(); ?>
+
+        {{ assets.outputJs('footer') }}
+        
+    </body>
+<html>
+

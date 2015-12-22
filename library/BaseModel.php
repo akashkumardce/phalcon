@@ -28,7 +28,7 @@ class BaseModel extends \Phalcon\Mvc\Model
                 }
             }
         }
-        return "qb";
+        return "db";
     }   
     
     public static function findFirst($parameters = NULL, $hostType = NULL)

@@ -1,15 +1,17 @@
-<html>
-    <head>
-        <title>Some amazing website</title>
+LOGO ............ INDEX-MASTER-LAYOUT
+<?php echo $string; ?>
+<title> - My Webpage</title>
+<br><br><br>
+
+<div>
+    <div class="sidebbar-left">
         
-        <?php echo $this->assets->outputJs('header'); ?>
-    </head>
-    <body>
-<?php echo $sharedVAr; ?>
+    </div>
+    <div class="sidebbar-content">
         <?php echo $this->getContent(); ?>
-
-        <?php echo $this->assets->outputJs('footer'); ?>
+      
+    </div>
+    <div class="sidebbar-left">
         
-    </body>
-<html>
-
+    </div>
+</div>

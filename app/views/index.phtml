@@ -1,15 +1,17 @@
-<html>
-    <head>
-        <title>Some amazing website</title>
+LOGO ............ INDEX-MASTER-LAYOUT
+{{ string }}
+<title>{% block title %}{% endblock %} - My Webpage</title>
+<br><br><br>
+
+<div>
+    <div class="sidebbar-left">
         
-        {{ assets.outputJs('header') }}
-    </head>
-    <body>
-{{ sharedVAr }}
+    </div>
+    <div class="sidebbar-content">
         <?php echo $this->getContent(); ?>
-
-        {{ assets.outputJs('footer') }}
+      
+    </div>
+    <div class="sidebbar-left">
         
-    </body>
-<html>
-
+    </div>
+</div>

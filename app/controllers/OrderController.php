@@ -14,5 +14,7 @@ class OrderController extends ApplicationController {
       
    }
    
-
+   public function detailsAction() {
+       
+   }
 }

@@ -2,7 +2,7 @@
 
 $router = new \Phalcon\Mvc\Router(false);
 
-$router->add("/:controler/:action", array(        
+$router->add("/:controller/:action", array(        
     'controller' => 1,
     'action' => 2,
 ));
@@ -10,12 +10,6 @@ $router->add("/:controler/:action", array(
 $router->add("/", array(       
     'controller' => 'index',
     'action' => 'index',
-));
-
-
-$router->add("/products/:action", array(        
-    'controller' => 'products',
-    'action' => 1,
 ));
 
 //Set 404 paths

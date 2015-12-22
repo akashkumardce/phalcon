@@ -20,7 +20,7 @@ class MemcacheService {
         $this->cache->save($key, $value);
     }
     
-    public function fet($key,$value){
+    public function get($key){
         return $this->cache->get($key);
     }
 }

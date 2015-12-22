@@ -3,6 +3,8 @@
 class ApplicationController extends \Phalcon\Mvc\Controller {
     function onConstruct() {
        
-       $this->view->commonLayout = '21';
+       $layoutDataObj = new LayoutData();
+       $layoutData = $layoutDataObj->getLayoutData();
+       $this->view->layout = $layoutData;
     }
 }

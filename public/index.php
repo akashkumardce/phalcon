@@ -10,7 +10,7 @@ try {
    $loader->registerDirs(array(
        '../app/controllers/',
        '../app/models/',
-       '../app/library/',
+       '../app/helper/',
        '../library/'
    ))->register();
 
@@ -32,19 +32,7 @@ try {
        require_once (ROOT . DS . 'config' . DS . 'viewConfig.php');
        return $view;
    });
-   $di->set('voltService', function ($view, $di) {
 
-    $volt = new Volt($view, $di);
-
-    $volt->setOptions(
-        array(
-            "compiledPath"      => "../app/compiled-templates/",
-            "compiledExtension" => ".compiled"
-        )
-    );
-
-    return $volt;
-});
 
 
     $di->set('router', function(){
